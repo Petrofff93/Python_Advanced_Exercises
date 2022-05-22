@@ -21,8 +21,8 @@ while True:
     current_milk = cups_of_milk_q[0]
 
     if current_chocolate <= 0 and current_milk <= 0:
-        cups_of_milk_q.remove(current_milk)
-        chocolates_stack.remove(current_chocolate)
+        cups_of_milk_q.popleft()
+        chocolates_stack.pop()
         continue
 
     if current_milk <= 0:
