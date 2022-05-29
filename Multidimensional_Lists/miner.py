@@ -25,22 +25,19 @@ def valid_move(miner_row, miner_col, mining_field, current_direction):
     if current_direction == 'up':
         if 0 <= miner_row - 1 < len(mining_field):
             result = [miner_row - 1, miner_col]
-            return result
 
     elif current_direction == 'down':
         if 0 <= miner_row + 1 < len(mining_field):
             result = [miner_row + 1, miner_col]
-            return result
 
     elif current_direction == 'left':
         if 0 <= miner_col - 1 < len(mining_field):
             result = [miner_row, miner_col - 1]
-            return result
 
     elif current_direction == 'right':
         if 0 <= miner_col + 1 < len(mining_field):
             result = [miner_row, miner_col + 1]
-            return result
+    return result
 
 
 while directions:
