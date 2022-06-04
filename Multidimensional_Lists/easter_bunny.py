@@ -20,7 +20,7 @@ directions = {
     'down': lambda r, c: (r + 1, c)
 }
 
-best_sum = 0
+best_sum = float('-inf')
 best_dir = ''
 best_path = []
 
@@ -42,8 +42,3 @@ for direction in directions:
 print(best_dir)
 print(*best_path, sep='\n')
 print(best_sum)
-
-
-
-
-
