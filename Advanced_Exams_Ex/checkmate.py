@@ -2,7 +2,7 @@ def is_valid_pos(matrix, queen_row, queen_col):
     return 0 <= queen_row < len(matrix) and 0 <= queen_col < len(matrix)
 
 
-def can_reach_king(matrix, row, col):
+def can_reach_king(*args):
     def queen_left_move(matrix, queen_row, queen_col):
         queen_col -= 1
 
