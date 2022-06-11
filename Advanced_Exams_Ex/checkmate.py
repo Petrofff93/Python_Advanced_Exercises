@@ -1,4 +1,4 @@
-def is_valid_pos(matrix, queen_row, queen_col):
+def is_valid_pos(*args):
     return 0 <= queen_row < len(matrix) and 0 <= queen_col < len(matrix)
 
 
